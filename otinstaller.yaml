@@ -41,7 +41,7 @@ secrets:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/asn@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/asn@sha256:1dd722fdcab3a06b3f19c39853b324f888505dff12965574d0a41b03de61efc6
   platforms: [linux/amd64, linux/arm64]
   command: ["asn-ot", "-n", "-j", "{target}"]
   output_format: json
